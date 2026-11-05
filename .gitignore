@@ -1,0 +1,16 @@
+# ESP-IDF build output
+build/
+sdkconfig.old
+sdkconfig.ci
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.cache/
+.clangd/
+
+# OS files
+.DS_Store
+Thumbs.db
