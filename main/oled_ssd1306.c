@@ -127,10 +127,10 @@ void oled_draw_char(int x, int y, char c) {
     if (c < 0x20 || c > 0x7E) c = ' ';
     int font_idx = c - 0x20;
 
-    for (int col = 0; col < 8; col++) {
-        uint8_t line = font8x8_basic[font_idx][col];
-        for (int row = 0; row < 8; row++) {
-            bool on = (line >> row) & 0x01;
+    for (int row = 0; row < 8; row++) {
+        uint8_t line = font8x8_basic[font_idx][row];
+        for (int col = 0; col < 8; col++) {
+            bool on = (line >> col) & 0x01;
             oled_draw_pixel(x + col, y + row, on);
         }
     }

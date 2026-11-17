@@ -34,12 +34,12 @@ Chương trình được phát triển trên vi điều khiển **ESP32 DevKit V
                                   +-------------------+
                    (Nguồn ADC 3.3V) 3V3 [ 1]       [ 1] GND (Mass chung toàn hệ thống)
                                      EN [ 2]       [ 2] 23
-                   LDR_TL (Trên-Trái) 36 [ 3]       [ 3] 22 <--- SCL (Chung OLED & INA219)
-                  LDR_TR (Trên-Phải) 39 [ 4]       [ 4]  1
-                   LDR_BL (Dưới-Trái) 34 [ 5]       [ 5]  3
-                  LDR_BR (Dưới-Phải) 35 [ 6]       [ 6] 21 <--- SDA (Chung OLED & INA219)
-                                     32 [ 7]       [ 7] 19 <--- Servo Elevation (Trục đứng)
-                                     33 [ 8]       [ 8] 18 <--- Servo Azimuth (Trục ngang)
+                                     36 [ 3]       [ 3] 22 <--- SCL (Chung OLED & INA219)
+                                     39 [ 4]       [ 4]  1
+                   LDR_TL (Trên-Trái) 34 [ 5]       [ 5]  3
+                  LDR_TR (Trên-Phải) 35 [ 6]       [ 6] 21 <--- SDA (Chung OLED & INA219)
+                   LDR_BL (Dưới-Trái) 32 [ 7]       [ 7] 19 <--- Servo Elevation (Trục đứng)
+                  LDR_BR (Dưới-Phải) 33 [ 8]       [ 8] 18 <--- Servo Azimuth (Trục ngang)
                                      ...               ...
 ```
 
