@@ -16,8 +16,8 @@
 #define LDR_BL_GPIO         GPIO_NUM_32 // Dưới - Trái (Bottom-Left)
 #define LDR_BR_GPIO         GPIO_NUM_33 // Dưới - Phải (Bottom-Right)
 
-#define LDR_DEFAULT_DEADBAND    100     // Ngưỡng sai số cân bằng ánh sáng
-#define LDR_NIGHT_THRESHOLD     300     // Ngưỡng trời tối (giá trị ADC trung bình < 300)
+#define LDR_DEFAULT_DEADBAND    50      // Ngưỡng sai số cân bằng ánh sáng (nhạy để demo đèn flash)
+#define LDR_NIGHT_THRESHOLD     80      // Ngưỡng trời tối (chỉ kích hoạt khi trùm kín cả 4 quang trở)
 
 typedef enum {
     LDR_V_BALANCED = 0,

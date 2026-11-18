@@ -19,9 +19,9 @@
 #define SERVO_AZ_MAX_ANGLE      180.0f
 #define SERVO_AZ_DEFAULT_ANGLE  90.0f
 
-#define SERVO_EL_MIN_ANGLE      15.0f   // Tránh để góc quá thấp đập vào chân đế
-#define SERVO_EL_MAX_ANGLE      165.0f  // Tránh ngửa quá mức kéo căng dây
-#define SERVO_EL_DEFAULT_ANGLE  90.0f
+#define SERVO_EL_MIN_ANGLE      45.0f   // Giới hạn ngẩng cao nhất (lệch 45 độ so với tâm 90, tránh cấn trụ)
+#define SERVO_EL_MAX_ANGLE      135.0f  // Giới hạn gập thấp nhất (lệch 45 độ so với tâm 90, tránh cấn trụ)
+#define SERVO_EL_DEFAULT_ANGLE  90.0f   // Vị trí nằm ngang cân bằng ở giữa
 
 typedef enum {
     SERVO_ID_AZIMUTH   = 0, // Trục ngang
